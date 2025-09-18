@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Coffee Bliss</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">☕ Coffee Bliss</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html" class="active">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="reservation">
+  <h2>Reserve a Table</h2>
+  <form id="reservation-form">
+    <label>Name:</label>
+    <input type="text" name="name" required><br>
+    
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    
+    <label>Date:</label>
+    <input type="date" name="date" required><br>
+    
+    <label>Time:</label>
+    <input type="time" name="time" required><br>
+    
+    <label>Guests:</label>
+    <input type="number" name="guests" required><br>
+    
+    <button class="form button" type="submit">Reserve</button>
+  </form>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("z-QMXB0sbqzW5pzvv"); //EmailJS Public Key
+  })();
+</script>
+<script src="script.js"></script>
+</br></br></br></br></br>
+  <footer>
+    <p>&copy; 2025 Coffee Bliss</p>
+  </footer>
+</body>
+</html>
